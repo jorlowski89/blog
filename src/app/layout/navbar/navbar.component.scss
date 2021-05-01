@@ -1,5 +1,6 @@
 mat-toolbar {
   height: 20vh;
+  padding: 0;
 }
 .header {
   width: 100%;
@@ -8,4 +9,14 @@ mat-toolbar {
 
 .title {
   text-align: center;
+  font-size: 40px;
+}
+
+.toogle-button {
+  height: 20vh;
+}
+
+.left-side,
+.right-side {
+  width: 64px;
 }
