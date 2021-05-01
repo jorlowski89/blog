@@ -2,9 +2,12 @@ mat-toolbar {
   height: 20vh;
   padding: 0;
 }
-.header {
+.row {
   width: 100%;
-  text-align: center;
+  margin: 0;
+}
+.col-1 {
+  padding: 0;
 }
 
 .title {
@@ -12,11 +15,10 @@ mat-toolbar {
   font-size: 40px;
 }
 
-.toogle-button {
-  height: 20vh;
+.header {
+  text-align: center;
 }
 
-.left-side,
-.right-side {
-  width: 64px;
+.toogle-button {
+  height: 20vh;
 }
