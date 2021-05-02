@@ -7,7 +7,7 @@
     <img mat-card-image src="../../../assets/images/blue-sidebar.jpg" alt="Photo of me">
     <mat-card-content>
         <mat-selection-list #menu [multiple]="false">
-            <mat-list-option *ngFor="let item of items" [value]="shoe">
+            <mat-list-option *ngFor="let item of items" [value]="item" (click)="route(item)">
               {{item}}
             </mat-list-option>
         </mat-selection-list>         
