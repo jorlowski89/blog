@@ -1,1 +1,15 @@
-<p>sidebar works!</p>
+<mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="author-image"></div>
+      <mat-card-title>Jakub Orłowski</mat-card-title>
+      <mat-card-subtitle>Junior Front End Developer</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../assets/images/blue-sidebar.jpg" alt="Photo of me">
+    <mat-card-content>
+        <mat-selection-list #menu [multiple]="false">
+            <mat-list-option *ngFor="let item of items" [value]="shoe">
+              {{item}}
+            </mat-list-option>
+        </mat-selection-list>         
+    </mat-card-content>
+</mat-card>

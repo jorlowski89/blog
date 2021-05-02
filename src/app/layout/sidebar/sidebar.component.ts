@@ -12,4 +12,6 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  items: string[] = ['O mnie', 'Posty', 'Archiwum postów', 'Kontakt'];
+
 }
