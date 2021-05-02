@@ -7,11 +7,13 @@ import { LayoutModule } from './layout/layout.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HomeComponent } from './page/home/home.component';
+import { PostsComponent } from './page/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    PostsComponent,
   ],
   imports: [
     BrowserModule,
