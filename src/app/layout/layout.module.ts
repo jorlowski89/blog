@@ -8,11 +8,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
 @NgModule({
-  declarations: [FooterComponent, NavbarComponent, SidebarComponent],
+  declarations: [FooterComponent, NavbarComponent, SidebarComponent, NotFoundComponent],
   exports: [FooterComponent, NavbarComponent, SidebarComponent],
   imports: [
     CommonModule,
