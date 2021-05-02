@@ -10,6 +10,12 @@ import { HomeComponent } from './page/home/home.component';
 import { PostsComponent } from './page/posts/posts.component';
 import { PostsArchComponent } from './page/posts/posts-arch/posts-arch.component';
 import { ContactComponent } from './page/contact/contact.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { NewPostComponent } from './page/posts/new-post/new-post.component';
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -18,13 +24,19 @@ import { ContactComponent } from './page/contact/contact.component';
     PostsComponent,
     PostsArchComponent,
     ContactComponent,
+    NewPostComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
