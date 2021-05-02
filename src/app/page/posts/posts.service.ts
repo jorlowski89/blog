@@ -7,9 +7,9 @@ import { Injectable } from '@angular/core';
 export class PostsService {
   resourseUrl = 'http://localhost:3000/posts';
 
-  constructor(private httpClien: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getPosts() {
-    return this.httpClien.get(this.resourseUrl).toPromise();
+    return this.httpClient.get(this.resourseUrl).toPromise();
   }
 }

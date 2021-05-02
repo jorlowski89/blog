@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { NewPostComponent } from './new-post/new-post.component';
+import { PostsService } from './posts.service';
 
 @Component({
   selector: 'app-posts',
@@ -9,7 +10,9 @@ import { NewPostComponent } from './new-post/new-post.component';
 })
 export class PostsComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  posts = this.postsService.getPosts();
+
+  constructor(public dialog: MatDialog, private postsService: PostsService) { }
 
   openDialog() {
     const dialogRef = this.dialog.open(NewPostComponent);
