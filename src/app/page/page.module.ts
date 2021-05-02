@@ -11,11 +11,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
-
-
+import { PostItemComponent } from './posts/post-item/post-item.component';
 
 @NgModule({
   declarations: [
+    HomeComponent,
+    PostsComponent,
+    PostsArchComponent,
+    ContactComponent,
+    NewPostComponent,
+    PostItemComponent,],
+  exports: [
     HomeComponent,
     PostsComponent,
     PostsArchComponent,
