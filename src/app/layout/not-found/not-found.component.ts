@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LayoutService } from '../layout.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { LayoutService } from '../layout.service';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor(private layoutService: LayoutService) { }
+  constructor(private layoutService: LayoutService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -16,5 +17,9 @@ export class NotFoundComponent implements OnInit {
   back(): void {
     this.layoutService.back();
   }
+
+  goHome(): void {
+    this.router.navigateByUrl('/');
+  };
 
 }
