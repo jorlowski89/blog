@@ -1,6 +1,24 @@
 {
-    "posts": [
-    { "id": 1, "title": "Post numer 1", "text": "Lorem ipsum..." },
-    { "id": 2, "title": "Post numer 2", "text": "Lorem ipsum..." }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post numer 1",
+      "text": "Lorem ipsum..."
+    },
+    {
+      "id": 2,
+      "title": "Post numer 2",
+      "text": "Lorem ipsum..."
+    },
+    {
+      "title": "tytuł testowego posta",
+      "text": "Treść testowego posta",
+      "id": 3
+    },
+    {
+      "title": "tytuł 2",
+      "text": "Treść 2",
+      "id": 4
+    }
+  ]
 }

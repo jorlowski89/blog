@@ -1,9 +1,31 @@
 <h2 mat-dialog-title>Nowy post</h2>
 <mat-dialog-content class="mat-typography">
+  <form autocomplete="off" novalidate [formGroup]="postForm">
+
+    <section>
+      <fieldset>
+        <legend>
+          Tytuł posta:
+          <input type="text" formControlName ="title">
+          <p class="error" *ngIf="showErrors && postForm.get('title').errors?.minlength">Tytuł posta musi mieć conajmniej 5 znaków!</p>
+        </legend>
+      </fieldset>
+    </section>
+      
+    <section>
+      <fieldset>
+        <legend>
+          Treść posta
+          <input type="textarea" formControlName ="text">
+        </legend>
+      </fieldset>
+    </section>
+
+  </form>
 
 </mat-dialog-content>
 
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="save()">Publikuj post</button>
 </mat-dialog-actions>
