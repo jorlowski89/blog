@@ -21,7 +21,9 @@ export class PostsArchComponent {
   displayedColumns: string[] = ['id', 'title', 'text', 'btn'];
 
   deletePost(index): void {
-    this.postService.deletePost(index)
-      .then(() => window.location.reload())
+    if (confirm("Czy na pewno chcesz usunąć post o ID: " + index)) {
+      this.postService.deletePost(index)
+        .then(() => window.location.reload())
+    }
   }
 }
