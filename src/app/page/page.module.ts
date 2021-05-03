@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PostItemComponent } from './posts/post-item/post-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatDialogModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ]
 })
 export class PageModule { }
