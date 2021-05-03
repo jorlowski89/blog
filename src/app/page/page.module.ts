@@ -14,6 +14,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { PostItemComponent } from './posts/post-item/post-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatTableModule } from '@angular/material/table';
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    GoogleMapsModule
   ]
 })
 export class PageModule { }
