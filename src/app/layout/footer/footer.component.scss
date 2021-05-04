@@ -1,5 +1,8 @@
 mat-toolbar {
   height: 5vh;
+  background-image: url("../../../assets/images/blue-footer.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 .footer {
   width: 100%;
@@ -7,5 +10,5 @@ mat-toolbar {
 }
 
 .text {
-  text-align: center;
+  color: aliceblue;
 }
