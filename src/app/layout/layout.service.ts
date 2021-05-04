@@ -7,8 +7,6 @@ import { Location } from '@angular/common';
   providedIn: 'root'
 })
 export class LayoutService {
-  private history: string[] = [];
-  public goingBack = false;
 
   private sideMenuState = new BehaviorSubject<boolean>(true);
   sideMenuShowing: Observable<boolean>;
@@ -21,13 +19,4 @@ export class LayoutService {
     this.sideMenuState.next(!this.sideMenuState.value);
   }
 
-  back(): void {
-    this.history.pop();
-    if (this.history.length > 0) {
-      this.goingBack = true;
-      this.location.back();
-    } else {
-      this.router.navigateByUrl('/');
-    }
-  }
 }

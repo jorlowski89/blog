@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LayoutService } from '../layout.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-not-found',
@@ -9,13 +10,13 @@ import { LayoutService } from '../layout.service';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor(private layoutService: LayoutService, private router: Router) { }
+  constructor(private router: Router, private location: Location) { }
 
   ngOnInit(): void {
   }
 
   back(): void {
-    this.layoutService.back();
+    this.location.back();
   }
 
   goHome(): void {
