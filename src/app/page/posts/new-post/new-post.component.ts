@@ -28,6 +28,6 @@ export class NewPostComponent implements OnInit {
     const post = { ...formValue }
     this.postsService.addPost(post)
     this.postsService.getPosts()
-    window.location.reload();
+      .then(() => window.location.reload())
   }
 }

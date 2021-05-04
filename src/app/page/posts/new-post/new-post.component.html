@@ -1,23 +1,15 @@
 <h2 mat-dialog-title>Nowy post</h2>
-<mat-dialog-content class="mat-typography">
+<mat-dialog-content class="dialog">
   <form autocomplete="off" novalidate [formGroup]="postForm">
 
-    <section>
-      <fieldset>
-        <legend>
-          Tytuł posta:
-          <input type="text" formControlName ="title">
-        </legend>
-      </fieldset>
+    <section class="title">
+      <p>Tytuł posta:</p>
+      <input type="text" formControlName ="title">
     </section>
       
-    <section>
-      <fieldset>
-        <legend>
-          Treść posta
-          <input type="textarea" formControlName ="text">
-        </legend>
-      </fieldset>
+    <section class="text">
+      <p>Treść posta:</p>
+      <textarea matInput formControlName ="text"></textarea>
     </section>
 
   </form>
@@ -25,6 +17,6 @@
 </mat-dialog-content>
 
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="save()">Publikuj post</button>
+  <button mat-button mat-dialog-close>Anuluj</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="save()">Publikuj post</button>
 </mat-dialog-actions>
