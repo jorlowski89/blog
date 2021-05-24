@@ -1,13 +1,25 @@
 <div class="content">
     <h1>Kontakt</h1>
-    <div class="map">
-        <google-map
-        height="500px"
-        width="50%"
-        [zoom]="zoom"
-        [center]="center"
-        [options]="options"
-        >
-        </google-map>
+    <div class="row">
+        <div class="map">
+            <h2>Mapa</h2>
+            <google-map
+            height="400px"
+            width="600px"
+            [zoom]="zoom"
+            [center]="center"
+            [options]="options"
+            >
+            </google-map>
+        </div>
+        <div class="container dane">
+            <h2>Dane kontaktowe</h2>
+            <div class="row">
+                <mat-icon>phone</mat-icon> <p>Tel: 111 222 333</p>
+            </div>
+            <div class="row">
+            <mat-icon>mail</mat-icon> <p>e-mail: jakub.orlowski89@gmail.com</p>
+            </div>
+        </div>
     </div>
 </div>
