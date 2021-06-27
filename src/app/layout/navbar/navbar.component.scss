@@ -1,15 +1,17 @@
 mat-toolbar {
-  height: 20vh;
+  height: 130px;
   padding: 0;
   background-image: url("../../../assets/images/blue-navbar.jpg");
   background-size: cover;
   background-position: bottom;
 }
+
 .row {
   width: 100%;
   margin: 0;
   background-color: hsla(0, 0%, 0%, 10%);
 }
+
 .col-1 {
   padding: 0;
 }
